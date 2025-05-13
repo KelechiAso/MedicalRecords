@@ -1,0 +1,252 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    EMR Dashboard - Analytics Overview
+{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-2 sm:px-4 py-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center sm:text-left">EMR System Dashboard</h1>
+
+    <form method="GET" action="{{ url_for('index') }}" class="mb-8 p-4 bg-gray-50 rounded-lg shadow">
+        <h2 class="text-lg font-semibold text-gray-700 mb-3">Filters & Slicers</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 items-end">
+            <div>
+                <label for="filter_year" class="block text-sm font-medium text-gray-700">Encounter Year:</label>
+                <input type="number" name="filter_year" id="filter_year" placeholder="e.g., 2023"
+                       value="{{ request.args.get('filter_year', '') }}"
+                       class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="department-filter" class="block text-sm font-medium text-gray-700">Department: <span class="text-xs text-gray-400">(UI Only)</span></label>
+                <select id="department-filter" name="department_filter_ui" disabled
+                        class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 bg-gray-200 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md cursor-not-allowed">
+                    <option>All Departments</option>
+                    <option>Cardiology</option>
+                    <option>Pediatrics</option>
+                    <option>Oncology</option>
+                </select>
+            </div>
+            <div>
+                <label for="filter_encounter_type" class="block text-sm font-medium text-gray-700">Encounter Type:</label>
+                <select id="filter_encounter_type" name="filter_encounter_type"
+                        class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                    <option value="">All Types</option>
+                    <option value="Outpatient" {% if request.args.get('filter_encounter_type') == 'Outpatient' %}selected{% endif %}>Outpatient</option>
+                    <option value="Inpatient" {% if request.args.get('filter_encounter_type') == 'Inpatient' %}selected{% endif %}>Inpatient</option>
+                    <option value="Emergency" {% if request.args.get('filter_encounter_type') == 'Emergency' %}selected{% endif %}>Emergency</option>
+                    <option value="Follow-up" {% if request.args.get('filter_encounter_type') == 'Follow-up' %}selected{% endif %}>Follow-up</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit"
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md shadow hover:shadow-md transition-shadow duration-300">
+                    Apply Filters
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center">
+                <div class="p-3 rounded-full bg-blue-500 text-white mr-4">
+                    <i class="fas fa-users fa-2x"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500 font-medium">Total Patients <span class="text-xs text-gray-400">(Filtered)</span></p>
+                    <p class="text-3xl font-bold text-gray-800">{{ patient_count | default('N/A') }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center">
+                <div class="p-3 rounded-full bg-green-500 text-white mr-4">
+                    <i class="fas fa-file-medical-alt fa-2x"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500 font-medium">Total Encounters <span class="text-xs text-gray-400">(Filtered)</span></p>
+                    <p class="text-3xl font-bold text-gray-800">{{ encounter_count | default('N/A') }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center">
+                <div class="p-3 rounded-full bg-purple-500 text-white mr-4">
+                    <i class="fas fa-pills fa-2x"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500 font-medium">Active Medications <span class="text-xs text-gray-400">(Overall)</span></p>
+                    <p class="text-3xl font-bold text-gray-800">{{ active_medications_count | default('N/A') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <div class="lg:col-span-1 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4 text-center">
+                <i class="fas fa-venus-mars mr-2 text-pink-500"></i>Patient Gender Distribution <span class="text-xs text-gray-400">(Filtered Patients)</span>
+            </h2>
+            <div class="h-64 md:h-72 flex items-center justify-center">
+                <canvas id="genderChart"></canvas>
+            </div>
+        </div>
+
+        <div class="lg:col-span-2 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4 text-center">
+                <i class="fas fa-birthday-cake mr-2 text-yellow-500"></i>Patient Age Groups <span class="text-xs text-gray-400">(Filtered Patients)</span>
+            </h2>
+            <div class="h-64 md:h-72 flex items-center justify-center">
+                <canvas id="ageGroupChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+         <div class="lg:col-span-2 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4 text-center">
+                <i class="fas fa-notes-medical mr-2 text-teal-500"></i>Encounter Types <span class="text-xs text-gray-400">(Filtered)</span>
+            </h2>
+            <div class="h-64 md:h-72 flex items-center justify-center">
+                <canvas id="encounterTypeChart"></canvas>
+            </div>
+        </div>
+        <div class="lg:col-span-1 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">
+                <i class="fas fa-stethoscope mr-2 text-red-500"></i>Top 5 Common Diagnoses <span class="text-xs text-gray-400">(Filtered)</span>
+            </h2>
+            {% if common_diagnoses %}
+                <ul class="space-y-2">
+                    {% for diagnosis, count in common_diagnoses %}
+                    <li class="flex justify-between items-center text-sm p-2.5 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
+                        <span class="text-gray-700 truncate" title="{{ diagnosis }}">{{ diagnosis }}</span>
+                        <span class="font-semibold text-red-600 bg-red-100 px-2 py-0.5 rounded-full">{{ count }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="text-gray-500">No diagnosis data available for current filters.</p>
+            {% endif %}
+        </div>
+    </div>
+
+
+    <div class="bg-white rounded-xl shadow-lg p-6">
+        <h2 class="text-xl font-semibold text-gray-700 mb-4">
+            <i class="fas fa-history mr-2 text-indigo-500"></i>Recent Encounters <span class="text-xs text-gray-400">(Filtered)</span>
+        </h2>
+        {% if recent_encounters %}
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Patient ID</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Encounter Date</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        {% for encounter in recent_encounters %}
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{{ encounter.patient_id }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{{ encounter.encounter_date.strftime('%Y-%m-%d %H:%M') if encounter.encounter_date else 'N/A' }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
+                                    {% if encounter.encounter_type == 'Emergency' %} bg-red-100 text-red-800 
+                                    {% elif encounter.encounter_type == 'Inpatient' %} bg-yellow-100 text-yellow-800
+                                    {% else %} bg-green-100 text-green-800 {% endif %}">
+                                    {{ encounter.encounter_type }}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
+                                <a href="{{ url_for('patient_detail', patient_id=encounter.patient_id) }}">View Patient</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <p class="text-gray-500">No recent encounters to display for current filters.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const genderData = {{ gender_data | tojson | safe }};
+            const ageGroupData = {{ age_group_data | tojson | safe }};
+            const encounterTypeData = {{ encounter_type_data | tojson | safe }};
+
+            const defaultChartColors = [
+                'rgba(54, 162, 235, 0.7)', 'rgba(255, 99, 132, 0.7)', 'rgba(255, 206, 86, 0.7)',
+                'rgba(75, 192, 192, 0.7)', 'rgba(153, 102, 255, 0.7)', 'rgba(255, 159, 64, 0.7)'
+            ];
+            const defaultBorderColors = [
+                'rgba(54, 162, 235, 1)', 'rgba(255, 99, 132, 1)', 'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'
+            ];
+
+            function renderChart(ctx, chartData, type, labelPrefix = '') {
+                if (ctx && chartData && chartData.labels && chartData.labels.length > 0) {
+                    let chartType = type;
+                    let legendDisplay = true;
+                    let yAxisOptions = { beginAtZero: true, ticks: { stepSize: 1 } };
+
+                    if (type === 'bar') {
+                        legendDisplay = false; 
+                         yAxisOptions.ticks.stepSize = Math.max(1, Math.ceil(Math.max(...(chartData.counts || [1])) / 10));
+                    }
+
+                    new Chart(ctx, {
+                        type: chartType,
+                        data: {
+                            labels: chartData.labels,
+                            datasets: [{
+                                label: labelPrefix,
+                                data: chartData.counts,
+                                backgroundColor: defaultChartColors.slice(0, chartData.labels.length),
+                                borderColor: defaultBorderColors.slice(0, chartData.labels.length),
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: type === 'bar' ? { y: yAxisOptions } : {},
+                            plugins: {
+                                legend: { display: legendDisplay, position: 'top' },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function(context) {
+                                            let currentLabel = context.label || '';
+                                            if (currentLabel) { currentLabel += ': '; }
+                                            if (context.parsed !== null) { currentLabel += context.parsed; }
+                                            return currentLabel;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                } else if (ctx) {
+                    const context = ctx.getContext('2d');
+                    context.clearRect(0, 0, ctx.width, ctx.height); 
+                    context.textAlign = 'center';
+                    context.font = '14px Arial';
+                    context.fillStyle = '#6b7280'; // gray-500
+                    context.fillText(`No ${labelPrefix.toLowerCase()} data available for current filters.`, ctx.width / 2, ctx.height / 2);
+                }
+            }
+
+            renderChart(document.getElementById('genderChart'), genderData, 'pie', 'Gender');
+            renderChart(document.getElementById('ageGroupChart'), ageGroupData, 'bar', 'Age Group');
+            renderChart(document.getElementById('encounterTypeChart'), encounterTypeData, 'doughnut', 'Encounter Type');
+        });
+    </script>
+{% endblock %}

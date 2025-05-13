@@ -1,0 +1,501 @@
+diagnosis_id,encounter_id,patient_id,icd_code,diagnosis_description
+DIAG0001,ENC0001,PAT001,R05,Cough
+DIAG0002,ENC0002,PAT002,J02.9,Acute pharyngitis unspecified
+DIAG0003,ENC0003,PAT001,R05,Cough - Follow-up
+DIAG0004,ENC0004,PAT003,M54.5,Low back pain
+DIAG0005,ENC0005,PAT004,Z00.00,Encounter for general adult medical examination without abnormal findings
+DIAG0006,ENC0006,PAT005,I10,Essential (primary) hypertension
+DIAG0007,ENC0007,PAT002,J02.9,Acute pharyngitis unspecified - Resolved
+DIAG0008,ENC0008,PAT006,J45.909,Unspecified asthma without exacerbation
+DIAG0009,ENC0009,PAT007,S93.401A,Sprain of unspecified ligament of right ankle initial encounter
+DIAG0010,ENC0010,PAT003,M54.5,Low back pain - Improving
+DIAG0011,ENC0011,PAT008,E11.9,Type 2 diabetes mellitus without complications
+DIAG0012,ENC0012,PAT009,R05,Cough
+DIAG0013,ENC0013,PAT010,K21.9,Gastro-esophageal reflux disease without esophagitis
+DIAG0014,ENC0014,PAT001,J02.9,Acute pharyngitis unspecified
+DIAG0015,ENC0015,PAT005,I10,Essential (primary) hypertension - Stable
+DIAG0016,ENC0016,PAT011,J45.909,Unspecified asthma without exacerbation
+DIAG0017,ENC0017,PAT012,M54.5,Low back pain
+DIAG0018,ENC0018,PAT013,E11.9,Type 2 diabetes mellitus without complications
+DIAG0019,ENC0019,PAT014,R05,Cough
+DIAG0020,ENC0020,PAT015,Z00.00,Encounter for general adult medical examination - Follow-up
+DIAG0021,ENC0021,PAT004,Z00.00,Encounter for general adult medical examination - Follow-up
+DIAG0022,ENC0022,PAT006,J45.909,Unspecified asthma - Admitted for observation
+DIAG0023,ENC0023,PAT007,S93.401A,Sprain of unspecified ligament of right ankle - Follow-up
+DIAG0024,ENC0024,PAT010,K21.9,Gastro-esophageal reflux disease - Acute flare
+DIAG0025,ENC0025,PAT002,R05,Persistent Cough
+DIAG0026,ENC0026,PAT016,R07.9,Chest pain unspecified
+DIAG0027,ENC0027,PAT017,S52.501A,Unspecified fracture of radial styloid process right initial encounter for closed fracture
+DIAG0028,ENC0028,PAT018,A09,Infectious gastroenteritis and colitis unspecified
+DIAG0029,ENC0029,PAT019,J06.9,Acute upper respiratory infection unspecified
+DIAG0030,ENC0030,PAT020,E03.9,Hypothyroidism unspecified
+DIAG0031,ENC0031,PAT001,Z71.1,Person with feared health complaint in whom no diagnosis is made
+DIAG0032,ENC0032,PAT016,R07.9,Chest pain unspecified - Investigation ongoing
+DIAG0033,ENC0033,PAT021,R10.13,Epigastric pain
+DIAG0034,ENC0034,PAT022,N39.0,Urinary tract infection site not specified
+DIAG0035,ENC0035,PAT023,I48.91,Unspecified atrial fibrillation
+DIAG0036,ENC0036,PAT003,Z00.00,General check-up
+DIAG0037,ENC0037,PAT024,E03.9,Hypothyroidism unspecified - Medication adjustment
+DIAG0038,ENC0038,PAT025,R42,Dizziness and giddiness
+DIAG0039,ENC0039,PAT005,I10,Hypertension - Routine check
+DIAG0040,ENC0040,PAT026,J30.9,Allergic rhinitis unspecified
+DIAG0041,ENC0041,PAT010,K21.9,Gastro-esophageal reflux disease - Follow-up
+DIAG0042,ENC0042,PAT027,S82.61XA,Displaced fracture of lateral malleolus of right fibula initial encounter for closed fracture
+DIAG0043,ENC0043,PAT028,L03.115,Cellulitis of right axilla
+DIAG0044,ENC0044,PAT012,M54.5,Low back pain - Admitted for pain management
+DIAG0045,ENC0045,PAT029,Z01.419,Encounter for routine gynecological examination without abnormal findings
+DIAG0046,ENC0046,PAT030,H10.9,Unspecified conjunctivitis
+DIAG0047,ENC0047,PAT008,E11.9,Type 2 diabetes - Annual review
+DIAG0048,ENC0048,PAT015,R51,Headache
+DIAG0049,ENC0049,PAT020,E03.9,Hypothyroidism - Admitted for stabilization
+DIAG0050,ENC0050,PAT002,Z00.129,Encounter for routine child health examination without abnormal findings
+DIAG0051,ENC0051,PAT031,J00,Common cold
+DIAG0052,ENC0052,PAT032,K59.00,Constipation unspecified
+DIAG0053,ENC0053,PAT033,R51,Headache
+DIAG0054,ENC0053,PAT033,M25.561,Pain in right knee
+DIAG0055,ENC0054,PAT034,L23.9,Allergic contact dermatitis unspecified cause
+DIAG0056,ENC0055,PAT035,E78.5,Hyperlipidemia unspecified
+DIAG0057,ENC0056,PAT031,J00,Common cold - Persistent
+DIAG0058,ENC0057,PAT036,S62.609A,Fracture of unspecified phalanx of unspecified finger initial encounter for closed fracture
+DIAG0059,ENC0058,PAT037,G47.00,Insomnia unspecified
+DIAG0060,ENC0059,PAT038,R11.2,Nausea with vomiting unspecified
+DIAG0061,ENC0060,PAT039,Z00.00,Routine health check
+DIAG0062,ENC0061,PAT040,M79.604,Pain in right leg
+DIAG0063,ENC0062,PAT001,S53.401A,Sprain of unspecified ligament of right elbow initial encounter
+DIAG0064,ENC0063,PAT041,E66.9,Obesity unspecified
+DIAG0065,ENC0064,PAT042,R06.02,Shortness of breath
+DIAG0066,ENC0065,PAT043,E78.2,Mixed hyperlipidemia
+DIAG0067,ENC0065,PAT043,I10,Essential (primary) hypertension
+DIAG0068,ENC0066,PAT011,J45.909,Asthma - Checkup
+DIAG0069,ENC0067,PAT044,K29.70,Gastritis unspecified without bleeding
+DIAG0070,ENC0068,PAT045,M17.11,Unilateral primary osteoarthritis right knee
+DIAG0071,ENC0069,PAT046,J01.90,Acute sinusitis unspecified
+DIAG0072,ENC0070,PAT047,E11.65,Type 2 diabetes mellitus with hyperglycemia
+DIAG0073,ENC0071,PAT025,M54.2,Cervicalgia
+DIAG0074,ENC0072,PAT048,L30.9,Dermatitis unspecified
+DIAG0075,ENC0073,PAT049,F32.9,Major depressive disorder single episode unspecified
+DIAG0076,ENC0074,PAT050,R07.89,Other chest pain
+DIAG0077,ENC0075,PAT006,J45.909,Asthma - Follow-up
+DIAG0078,ENC0076,PAT051,R10.9,Unspecified abdominal pain
+DIAG0079,ENC0077,PAT052,S93.402A,Sprain of unspecified ligament of left ankle initial encounter
+DIAG0080,ENC0078,PAT053,I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris
+DIAG0081,ENC0079,PAT054,H65.90,Unspecified nonsuppurative otitis media unspecified ear
+DIAG0082,ENC0080,PAT018,A09,Gastroenteritis - Recovered
+DIAG0083,ENC0081,PAT055,M79.1,Myalgia
+DIAG0084,ENC0082,PAT056,R09.81,Nasal congestion
+DIAG0085,ENC0083,PAT057,K58.9,Irritable bowel syndrome without diarrhea
+DIAG0086,ENC0084,PAT058,E03.9,Hypothyroidism - Stable
+DIAG0087,ENC0085,PAT030,H10.9,Conjunctivitis - Follow-up
+DIAG0088,ENC0086,PAT059,R53.83,Other fatigue
+DIAG0089,ENC0087,PAT060,S03.0XXA,Dislocation of jaw initial encounter
+DIAG0090,ENC0088,PAT002,I10,Essential (primary) hypertension - New diagnosis
+DIAG0091,ENC0089,PAT061,M25.551,Pain in right hip
+DIAG0092,ENC0090,PAT062,Z23,Encounter for immunization
+DIAG0093,ENC0091,PAT015,E11.9,Type 2 diabetes - Routine check
+DIAG0094,ENC0092,PAT063,K30,Functional dyspepsia
+DIAG0095,ENC0093,PAT064,L02.415,Cutaneous abscess of right lower limb
+DIAG0096,ENC0094,PAT065,G43.909,Migraine unspecified not intractable without status migrainosus
+DIAG0097,ENC0095,PAT035,E78.5,Hyperlipidemia - Follow-up
+DIAG0098,ENC0096,PAT066,R21,Rash and other nonspecific skin eruption
+DIAG0099,ENC0097,PAT067,S63.501A,Sprain of unspecified carpal joint of right wrist initial encounter
+DIAG0100,ENC0098,PAT009,R05,Cough - Persistent
+DIAG0101,ENC0099,PAT068,E78.0,Pure hypercholesterolemia
+DIAG0102,ENC0100,PAT069,Z00.121,Encounter for routine child health examination with abnormal findings
+DIAG0103,ENC0101,PAT070,M54.9,Dorsalgia unspecified
+DIAG0104,ENC0102,PAT004,J06.9,URI - Recovered
+DIAG0105,ENC0103,PAT071,R00.2,Palpitations
+DIAG0106,ENC0104,PAT072,N13.30,Unspecified hydronephrosis
+DIAG0107,ENC0105,PAT022,N39.0,UTI - Follow-up
+DIAG0108,ENC0106,PAT073,I49.9,Cardiac arrhythmia unspecified
+DIAG0109,ENC0107,PAT074,S33.5XXA,Sprain of ligaments of lumbar spine initial encounter
+DIAG0110,ENC0108,PAT013,E11.9,Type 2 diabetes - Admitted for glucose control
+DIAG0111,ENC0109,PAT075,M19.90,Unspecified osteoarthritis unspecified site
+DIAG0112,ENC0110,PAT076,J03.90,Acute tonsillitis unspecified
+DIAG0113,ENC0111,PAT040,M79.604,Pain in right leg - Follow-up
+DIAG0114,ENC0112,PAT077,S22.31XA,Fracture of one rib right side initial encounter for closed fracture
+DIAG0115,ENC0113,PAT078,K52.9,Noninfective gastroenteritis and colitis unspecified
+DIAG0116,ENC0114,PAT079,H53.149,Visual discomfort unspecified
+DIAG0117,ENC0115,PAT050,R07.89,Other chest pain - Resolved
+DIAG0118,ENC0116,PAT080,R50.9,Fever unspecified
+DIAG0119,ENC0117,PAT001,S53.401A,Sprain of right elbow - Improving
+DIAG0120,ENC0118,PAT081,E11.22,Type 2 diabetes mellitus with diabetic chronic kidney disease
+DIAG0121,ENC0119,PAT082,L24.9,Irritant contact dermatitis unspecified cause
+DIAG0122,ENC0120,PAT083,G47.33,Obstructive sleep apnea (adult) (pediatric)
+DIAG0123,ENC0121,PAT028,L03.115,Cellulitis of right axilla - Follow-up
+DIAG0124,ENC0122,PAT084,K04.7,Periapical abscess without sinus
+DIAG0125,ENC0123,PAT085,I73.9,Peripheral vascular disease unspecified
+DIAG0126,ENC0124,PAT086,J18.9,Pneumonia unspecified organism
+DIAG0127,ENC0125,PAT058,E03.9,Hypothyroidism - Annual check
+DIAG0128,ENC0126,PAT087,M25.571,Pain in right ankle and joints of right foot
+DIAG0129,ENC0127,PAT088,S06.0X0A,Concussion without loss of consciousness initial encounter
+DIAG0130,ENC0128,PAT019,J06.9,Acute URI - Admitted
+DIAG0131,ENC0129,PAT089,R10.30,Lower abdominal pain unspecified
+DIAG0132,ENC0130,PAT090,F41.9,Anxiety disorder unspecified
+DIAG0133,ENC0131,PAT062,Z23,Flu shot
+DIAG0134,ENC0132,PAT091,S92.301A,Fracture of unspecified metatarsal bone(s) right foot initial encounter for closed fracture
+DIAG0135,ENC0133,PAT092,E05.90,Thyrotoxicosis unspecified without thyrotoxic crisis or storm
+DIAG0136,ENC0134,PAT093,M77.11,Lateral epicondylitis right elbow
+DIAG0137,ENC0135,PAT032,K59.00,Constipation - Follow-up
+DIAG0138,ENC0136,PAT094,R06.4,Hyperventilation
+DIAG0139,ENC0137,PAT095,S43.401A,Sprain of unspecified part of right shoulder girdle initial encounter
+DIAG0140,ENC0138,PAT005,I10,Hypertension - Hospital admission
+DIAG0141,ENC0139,PAT096,L70.0,Acne vulgaris
+DIAG0142,ENC0140,PAT097,Z01.818,Encounter for other preprocedural examination
+DIAG0143,ENC0141,PAT070,M54.9,Back pain - Follow-up
+DIAG0144,ENC0142,PAT098,K57.90,Diverticulosis of intestine part unspecified without perforation or abscess without bleeding
+DIAG0145,ENC0143,PAT099,R10.2,Pelvic and perineal pain
+DIAG0146,ENC0144,PAT100,J44.9,Chronic obstructive pulmonary disease unspecified
+DIAG0147,ENC0145,PAT042,R06.02,Shortness of breath - Follow-up
+DIAG0148,ENC0146,PAT001,R05,Cough - Recurrent
+DIAG0149,ENC0147,PAT002,S13.4XXA,Sprain of ligaments of cervical spine initial encounter
+DIAG0150,ENC0148,PAT003,M54.5,Low back pain - Admitted for PT
+DIAG0151,ENC0149,PAT004,Z00.00,Annual physical
+DIAG0152,ENC0150,PAT005,I10,Hypertension - Medication adjustment
+DIAG0153,ENC0151,PAT006,J45.909,Asthma - Flare-up
+DIAG0154,ENC0152,PAT007,S93.401A,Ankle sprain - Worsening
+DIAG0155,ENC0153,PAT008,E11.9,Diabetes - Routine check
+DIAG0156,ENC0154,PAT009,R05,Cough - School note
+DIAG0157,ENC0155,PAT010,K21.9,GERD - Endoscopy referral
+DIAG0158,ENC0156,PAT011,J45.909,Asthma - Inhaler refill
+DIAG0159,ENC0157,PAT012,S82.61XA,Ankle fracture - Post-op check
+DIAG0160,ENC0158,PAT013,E11.9,Diabetes - Diet counseling
+DIAG0161,ENC0159,PAT014,R05,Cough - Viral
+DIAG0162,ENC0160,PAT015,Z00.00,Wellness visit
+DIAG0163,ENC0161,PAT016,R07.9,Chest pain - Cardiac workup
+DIAG0164,ENC0162,PAT017,S52.501A,Wrist fracture - Cast check
+DIAG0165,ENC0163,PAT018,A09,Gastroenteritis - Severe
+DIAG0166,ENC0164,PAT019,J06.9,URI - Bacterial suspected
+DIAG0167,ENC0165,PAT020,E03.9,Hypothyroidism - Lab review
+DIAG0168,ENC0166,PAT021,R10.13,Epigastric pain - PPI trial
+DIAG0169,ENC0167,PAT022,N39.0,UTI - Recurrent
+DIAG0170,ENC0168,PAT023,I48.91,Atrial fibrillation - Rate control
+DIAG0171,ENC0169,PAT024,E03.9,Hypothyroidism - Symptoms persist
+DIAG0172,ENC0170,PAT025,R42,Dizziness - Neurological consult
+DIAG0173,ENC0171,PAT026,J30.9,Allergic rhinitis - Seasonal
+DIAG0174,ENC0172,PAT027,S82.61XA,Ankle fracture - Surgical consult
+DIAG0175,ENC0173,PAT028,L03.115,Cellulitis - Antibiotics
+DIAG0176,ENC0174,PAT029,Z01.419,Pap smear
+DIAG0177,ENC0175,PAT030,H10.9,Conjunctivitis - Bacterial
+DIAG0178,ENC0176,PAT031,J00,Common cold - Day 3
+DIAG0179,ENC0177,PAT032,K59.00,Constipation - Lifestyle advice
+DIAG0180,ENC0178,PAT033,R51,Headache - Tension type
+DIAG0181,ENC0178,PAT033,M25.561,Knee pain - MRI ordered
+DIAG0182,ENC0179,PAT034,L23.9,Allergic dermatitis - Patch test referral
+DIAG0183,ENC0180,PAT035,E78.5,Hyperlipidemia - Statin initiation
+DIAG0184,ENC0181,PAT036,S62.609A,Finger fracture - Splint check
+DIAG0185,ENC0182,PAT037,G47.00,Insomnia - Sleep hygiene
+DIAG0186,ENC0183,PAT038,R11.2,Nausea/Vomiting - Antiemetic prescribed
+DIAG0187,ENC0184,PAT039,Z00.00,Sports physical
+DIAG0188,ENC0185,PAT040,M79.604,Leg pain - Vascular assessment
+DIAG0189,ENC0186,PAT041,E66.9,Obesity - Weight management program
+DIAG0190,ENC0187,PAT042,R06.02,Shortness of breath - Pulmonary function tests
+DIAG0191,ENC0188,PAT043,E78.2,Mixed hyperlipidemia - Dietitian referral
+DIAG0192,ENC0188,PAT043,I10,Hypertension - BP check
+DIAG0193,ENC0189,PAT044,K29.70,Gastritis - H. pylori test
+DIAG0194,ENC0190,PAT045,M17.11,Knee osteoarthritis - Injection considered
+DIAG0195,ENC0191,PAT046,J01.90,Acute sinusitis - Antibiotics
+DIAG0196,ENC0192,PAT047,E11.65,Diabetes with hyperglycemia - Insulin adjustment
+DIAG0197,ENC0193,PAT048,L30.9,Dermatitis - Steroid cream
+DIAG0198,ENC0194,PAT049,F32.9,Depression - SSRI started
+DIAG0199,ENC0195,PAT050,R07.89,Chest pain - Stress test ordered
+DIAG0200,ENC0196,PAT051,R10.9,Abdominal pain - Ultrasound scheduled
+DIAG0201,ENC0197,PAT052,S93.402A,Ankle sprain - RICE therapy
+DIAG0202,ENC0198,PAT053,I25.10,Coronary artery disease - Stable
+DIAG0203,ENC0199,PAT054,H65.90,Otitis media - Watchful waiting
+DIAG0204,ENC0200,PAT055,M79.1,Myalgia - Heat therapy
+DIAG0205,ENC0201,PAT056,R09.81,Nasal congestion - Decongestant
+DIAG0206,ENC0202,PAT057,K58.9,IBS - Dietary changes
+DIAG0207,ENC0203,PAT058,E03.9,Hypothyroidism - TSH check
+DIAG0208,ENC0204,PAT059,R53.83,Fatigue - Blood tests ordered
+DIAG0209,ENC0205,PAT060,S03.0XXA,Jaw dislocation - Reduced
+DIAG0210,ENC0206,PAT061,M25.551,Hip pain - X-ray ordered
+DIAG0211,ENC0207,PAT062,Z23,Tetanus booster
+DIAG0212,ENC0208,PAT063,K30,Dyspepsia - Antacids
+DIAG0213,ENC0209,PAT064,L02.415,Abscess - Incision and drainage
+DIAG0214,ENC0210,PAT065,G43.909,Migraine - Triptan prescribed
+DIAG0215,ENC0211,PAT066,R21,Rash - Antihistamine
+DIAG0216,ENC0212,PAT067,S63.501A,Wrist sprain - Immobilization
+DIAG0217,ENC0213,PAT068,E78.0,Hypercholesterolemia - Lifestyle mod
+DIAG0218,ENC0214,PAT069,Z00.121,Well child check - Vaccinations due
+DIAG0219,ENC0215,PAT070,M54.9,Back pain - Physical therapy referral
+DIAG0220,ENC0216,PAT071,R00.2,Palpitations - Holter monitor
+DIAG0221,ENC0217,PAT072,N13.30,Hydronephrosis - Urology consult
+DIAG0222,ENC0218,PAT073,I49.9,Arrhythmia - Cardiology follow-up
+DIAG0223,ENC0219,PAT074,S33.5XXA,Lumbar sprain - Muscle relaxants
+DIAG0224,ENC0220,PAT075,M19.90,Osteoarthritis - Pain management
+DIAG0225,ENC0221,PAT076,J03.90,Tonsillitis - Strep test
+DIAG0226,ENC0222,PAT077,S22.31XA,Rib fracture - Pain control
+DIAG0227,ENC0223,PAT078,K52.9,Noninfective gastroenteritis - Hydration
+DIAG0228,ENC0224,PAT079,H53.149,Visual discomfort - Optometry referral
+DIAG0229,ENC0225,PAT080,R50.9,Fever - Viral illness
+DIAG0230,ENC0226,PAT081,E11.22,Diabetic nephropathy - ACE inhibitor
+DIAG0231,ENC0227,PAT082,L24.9,Irritant dermatitis - Avoid irritant
+DIAG0232,ENC0228,PAT083,G47.33,Sleep apnea - CPAP titration
+DIAG0233,ENC0229,PAT084,K04.7,Periapical abscess - Root canal referral
+DIAG0234,ENC0230,PAT085,I73.9,PVD - Doppler ultrasound
+DIAG0235,ENC0231,PAT086,J18.9,Pneumonia - Chest X-ray
+DIAG0236,ENC0232,PAT087,M25.571,Ankle pain - Ortho consult
+DIAG0237,ENC0233,PAT088,S06.0X0A,Concussion - Rest advised
+DIAG0238,ENC0234,PAT089,R10.30,Lower abdominal pain - CT scan
+DIAG0239,ENC0235,PAT090,F41.9,Anxiety - Counseling referral
+DIAG0240,ENC0236,PAT091,S92.301A,Foot fracture - Boot
+DIAG0241,ENC0237,PAT092,E05.90,Thyrotoxicosis - Beta-blocker
+DIAG0242,ENC0238,PAT093,M77.11,Tennis elbow - Brace
+DIAG0243,ENC0239,PAT094,R06.4,Hyperventilation - Reassurance
+DIAG0244,ENC0240,PAT095,S43.401A,Shoulder sprain - Sling
+DIAG0245,ENC0241,PAT096,L70.0,Acne - Topical treatment
+DIAG0246,ENC0242,PAT097,Z01.818,Pre-op clearance
+DIAG0247,ENC0243,PAT098,K57.90,Diverticulosis - High fiber diet
+DIAG0248,ENC0244,PAT099,R10.2,Pelvic pain - GYN consult
+DIAG0249,ENC0245,PAT100,J44.9,COPD - Spirometry
+DIAG0250,ENC0246,PAT001,R05,Chronic Cough
+DIAG0251,ENC0247,PAT002,S13.4XXA,Whiplash injury
+DIAG0252,ENC0248,PAT003,M54.5,Sciatica
+DIAG0253,ENC0249,PAT004,Z00.00,Executive physical
+DIAG0254,ENC0250,PAT005,I10,Resistant Hypertension
+DIAG0255,ENC0251,PAT006,J45.901,Asthma with exacerbation
+DIAG0256,ENC0252,PAT007,S93.401A,Severe ankle sprain
+DIAG0257,ENC0253,PAT008,E11.51,Type 2 diabetes with diabetic peripheral angiopathy without gangrene
+DIAG0258,ENC0254,PAT009,R05,Bronchitis suspected
+DIAG0259,ENC0255,PAT010,K21.0,Gastro-esophageal reflux disease with esophagitis
+DIAG0260,ENC0256,PAT011,J45.20,Mild intermittent asthma uncomplicated
+DIAG0261,ENC0257,PAT012,S82.61XA,Bimalleolar fracture left ankle
+DIAG0262,ENC0258,PAT013,E11.40,Type 2 diabetes mellitus with diabetic neuropathy unspecified
+DIAG0263,ENC0259,PAT014,J02.0,Streptococcal pharyngitis
+DIAG0264,ENC0260,PAT015,Z00.01,Encounter for general adult medical examination with abnormal findings
+DIAG0265,ENC0261,PAT016,I20.9,Angina pectoris unspecified
+DIAG0266,ENC0262,PAT017,S52.501A,Colles' fracture right wrist
+DIAG0267,ENC0263,PAT018,A04.7,Enterocolitis due to Clostridium difficile
+DIAG0268,ENC0264,PAT019,J01.00,Acute maxillary sinusitis unspecified
+DIAG0269,ENC0265,PAT020,E02,Subclinical iodine-deficiency hypothyroidism
+DIAG0270,ENC0266,PAT021,K25.9,Gastric ulcer unspecified as acute or chronic without hemorrhage or perforation
+DIAG0271,ENC0267,PAT022,N30.00,Acute cystitis without hematuria
+DIAG0272,ENC0268,PAT023,I48.0,Paroxysmal atrial fibrillation
+DIAG0273,ENC0269,PAT024,E03.8,Other specified hypothyroidism
+DIAG0274,ENC0270,PAT025,H81.10,Benign paroxysmal vertigo unspecified ear
+DIAG0275,ENC0271,PAT026,J30.1,Allergic rhinitis due to pollen
+DIAG0276,ENC0272,PAT027,S82.51XA,Displaced fracture of medial malleolus of right tibia initial encounter for closed fracture
+DIAG0277,ENC0273,PAT028,L03.011,Cellulitis of right finger
+DIAG0278,ENC0274,PAT029,N83.20,Unspecified ovarian cyst
+DIAG0279,ENC0275,PAT030,H04.123,Dry eye syndrome of bilateral lacrimal glands
+DIAG0280,ENC0276,PAT031,J00,Nasopharyngitis
+DIAG0281,ENC0277,PAT032,K59.00,Chronic constipation
+DIAG0282,ENC0278,PAT033,G44.209,Tension-type headache unspecified not intractable
+DIAG0283,ENC0278,PAT033,M17.0,Bilateral primary osteoarthritis of knee
+DIAG0284,ENC0279,PAT034,L25.9,Unspecified contact dermatitis unspecified cause
+DIAG0285,ENC0280,PAT035,E78.4,Other hyperlipidemia
+DIAG0286,ENC0281,PAT036,S62.308A,Other fracture of specified metacarpal bone initial encounter for closed fracture
+DIAG0287,ENC0282,PAT037,G47.01,Insomnia due to medical condition
+DIAG0288,ENC0283,PAT038,R11.10,Vomiting unspecified
+DIAG0289,ENC0284,PAT039,Z02.1,Encounter for pre-employment examination
+DIAG0290,ENC0285,PAT040,M79.641,Pain in right hand
+DIAG0291,ENC0286,PAT041,E66.01,Morbid (severe) obesity due to excess calories
+DIAG0292,ENC0287,PAT042,R06.00,Dyspnea unspecified
+DIAG0293,ENC0288,PAT043,E78.1,Pure hyperglyceridemia
+DIAG0294,ENC0288,PAT043,I15.9,Secondary hypertension unspecified
+DIAG0295,ENC0289,PAT044,K29.00,Acute gastritis without bleeding
+DIAG0296,ENC0290,PAT045,M17.9,Osteoarthritis of knee unspecified
+DIAG0297,ENC0291,PAT046,J32.9,Chronic sinusitis unspecified
+DIAG0298,ENC0292,PAT047,E11.00,Type 2 diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)
+DIAG0299,ENC0293,PAT048,L20.9,Atopic dermatitis unspecified
+DIAG0300,ENC0294,PAT049,F33.0,Major depressive disorder recurrent mild
+DIAG0301,ENC0295,PAT050,R07.1,Chest pain on breathing
+DIAG0302,ENC0296,PAT051,R10.0,Acute abdomen
+DIAG0303,ENC0297,PAT052,S93.601A,Sprain of unspecified tarsal ligament of right foot initial encounter
+DIAG0304,ENC0298,PAT053,I25.2,Old myocardial infarction
+DIAG0305,ENC0299,PAT054,H66.90,Otitis media unspecified unspecified ear
+DIAG0306,ENC0300,PAT055,M62.838,Other muscle spasm
+DIAG0307,ENC0301,PAT056,J34.89,Other specified disorders of nose and nasal sinuses
+DIAG0308,ENC0302,PAT057,K58.0,Irritable bowel syndrome with diarrhea
+DIAG0309,ENC0303,PAT058,E03.1,Congenital iodine-deficiency hypothyroidism
+DIAG0310,ENC0304,PAT059,R53.1,Weakness
+DIAG0311,ENC0305,PAT060,S03.4XXA,Sprain of jaw initial encounter
+DIAG0312,ENC0306,PAT061,M16.11,Unilateral primary osteoarthritis right hip
+DIAG0313,ENC0307,PAT062,Z23,Pneumococcal vaccine
+DIAG0314,ENC0308,PAT063,K29.80,Duodenitis without bleeding
+DIAG0315,ENC0309,PAT064,L02.211,Cutaneous abscess of abdominal wall
+DIAG0316,ENC0310,PAT065,G43.009,Migraine without aura not intractable without status migrainosus
+DIAG0317,ENC0311,PAT066,L27.0,Generalized skin eruption due to drugs and medicaments
+DIAG0318,ENC0312,PAT067,S63.001A,Dislocation of unspecified carpal joint of right wrist initial encounter
+DIAG0319,ENC0313,PAT068,E78.00,Pure hypercholesterolemia unspecified
+DIAG0320,ENC0314,PAT069,Z00.129,Well child check - Normal
+DIAG0321,ENC0315,PAT070,M51.26,Other intervertebral disc displacement lumbosacral region
+DIAG0322,ENC0316,PAT071,R00.0,Tachycardia unspecified
+DIAG0323,ENC0317,PAT072,N10,Acute pyelonephritis
+DIAG0324,ENC0318,PAT073,I47.1,Supraventricular tachycardia
+DIAG0325,ENC0319,PAT074,S39.012A,Strain of muscle fascia and tendon of lower back initial encounter
+DIAG0326,ENC0320,PAT075,M15.9,Polyosteoarthritis unspecified
+DIAG0327,ENC0321,PAT076,J35.01,Chronic tonsillitis
+DIAG0328,ENC0322,PAT077,S22.41XA,Multiple fractures of ribs right side initial encounter for closed fracture
+DIAG0329,ENC0323,PAT078,K50.90,Crohn's disease unspecified without complications
+DIAG0330,ENC0324,PAT079,H52.13,Myopia bilateral
+DIAG0331,ENC0325,PAT080,R50.2,Drug induced fever
+DIAG0332,ENC0326,PAT081,E11.311,Type 2 diabetes mellitus with unspecified diabetic retinopathy with macular edema
+DIAG0333,ENC0327,PAT082,L25.0,Unspecified contact dermatitis due to cosmetics
+DIAG0334,ENC0328,PAT083,G47.30,Sleep apnea unspecified
+DIAG0335,ENC0329,PAT084,K05.21,Aggressive periodontitis localized slight
+DIAG0336,ENC0330,PAT085,I70.211,Atherosclerosis of native arteries of extremities with intermittent claudication right leg
+DIAG0337,ENC0331,PAT086,J15.9,Unspecified bacterial pneumonia
+DIAG0338,ENC0332,PAT087,M24.271,Disorder of ligament right ankle
+DIAG0339,ENC0333,PAT088,S06.9X0A,Unspecified intracranial injury without loss of consciousness initial encounter
+DIAG0340,ENC0334,PAT089,R10.84,Generalized abdominal pain
+DIAG0341,ENC0335,PAT090,F40.9,Phobic anxiety disorder unspecified
+DIAG0342,ENC0336,PAT091,S92.501A,Fracture of unspecified phalanx of right great toe initial encounter for closed fracture
+DIAG0343,ENC0337,PAT092,E06.3,Autoimmune thyroiditis
+DIAG0344,ENC0338,PAT093,M75.101,Unspecified rotator cuff tear or rupture of right shoulder not specified as traumatic
+DIAG0345,ENC0339,PAT094,F45.8,Other somatoform disorders
+DIAG0346,ENC0340,PAT095,S43.001A,Unspecified dislocation of right shoulder joint initial encounter
+DIAG0347,ENC0341,PAT096,L73.2,Hidradenitis suppurativa
+DIAG0348,ENC0342,PAT097,Z01.00,Encounter for examination of eyes and vision without abnormal findings
+DIAG0349,ENC0343,PAT098,K57.30,Diverticulosis of large intestine without perforation or abscess without bleeding
+DIAG0350,ENC0344,PAT099,N94.6,Dysmenorrhea unspecified
+DIAG0351,ENC0345,PAT100,J43.9,Emphysema unspecified
+DIAG0352,ENC0346,PAT001,R06.2,Wheezing
+DIAG0353,ENC0347,PAT002,M54.2,Cervicalgia due to injury
+DIAG0354,ENC0348,PAT003,M51.16,Intervertebral disc disorders with radiculopathy lumbosacral region
+DIAG0355,ENC0349,PAT004,Z76.2,Encounter for health supervision and care of other healthy infant and child
+DIAG0356,ENC0350,PAT005,I11.9,Hypertensive heart disease without heart failure
+DIAG0357,ENC0171,PAT026,J30.9,Allergic rhinitis - Follow-up
+DIAG0358,ENC0172,PAT027,S82.61XA,Ankle fracture - Post-op
+DIAG0359,ENC0173,PAT028,L03.115,Cellulitis - Improving
+DIAG0360,ENC0174,PAT029,N73.9,Female pelvic inflammatory disease unspecified
+DIAG0361,ENC0175,PAT030,H10.021,Acute follicular conjunctivitis right eye
+DIAG0362,ENC0176,PAT031,J00,Cold symptoms - Day 5
+DIAG0363,ENC0177,PAT032,K59.01,Slow transit constipation
+DIAG0364,ENC0178,PAT033,G44.009,Cluster headache syndrome unspecified not intractable
+DIAG0365,ENC0178,PAT033,M25.562,Pain in left knee
+DIAG0366,ENC0179,PAT034,L23.0,Allergic contact dermatitis due to metals
+DIAG0367,ENC0180,PAT035,E78.2,Mixed hyperlipidemia - Diet plan
+DIAG0368,ENC0181,PAT036,S62.609A,Finger fracture - Healing well
+DIAG0369,ENC0182,PAT037,G47.00,Chronic insomnia
+DIAG0370,ENC0183,PAT038,R11.0,Nausea
+DIAG0371,ENC0184,PAT039,Z02.5,Encounter for examination for participation in sport
+DIAG0372,ENC0185,PAT040,M79.642,Pain in left hand
+DIAG0373,ENC0186,PAT041,E66.3,Overweight
+DIAG0374,ENC0187,PAT042,J98.8,Other specified respiratory disorders
+DIAG0375,ENC0188,PAT043,I10,Hypertension - Uncontrolled
+DIAG0376,ENC0188,PAT043,E78.2,Hyperlipidemia - Medication review
+DIAG0377,ENC0189,PAT044,K29.71,Gastritis unspecified with bleeding
+DIAG0378,ENC0190,PAT045,M17.12,Unilateral primary osteoarthritis left knee
+DIAG0379,ENC0191,PAT046,J01.10,Acute frontal sinusitis unspecified
+DIAG0380,ENC0192,PAT047,E11.69,Type 2 diabetes mellitus with other specified complication
+DIAG0381,ENC0193,PAT048,L20.89,Other atopic dermatitis
+DIAG0382,ENC0194,PAT049,F32.0,Major depressive disorder single episode mild
+DIAG0383,ENC0195,PAT050,R07.2,Precordial pain
+DIAG0384,ENC0196,PAT051,R10.31,Right upper quadrant pain
+DIAG0385,ENC0197,PAT052,S93.411A,Sprain of calcaneofibular ligament of right ankle initial encounter
+DIAG0386,ENC0198,PAT053,I21.3,ST elevation (STEMI) myocardial infarction of unspecified site
+DIAG0387,ENC0199,PAT054,H65.00,Acute serous otitis media unspecified ear
+DIAG0388,ENC0200,PAT055,M79.10,Myalgia unspecified site
+DIAG0389,ENC0201,PAT056,J31.0,Chronic rhinitis
+DIAG0390,ENC0202,PAT057,K58.9,Irritable bowel syndrome - Symptomatic relief
+DIAG0391,ENC0203,PAT058,E03.2,Hypothyroidism due to medicaments and other exogenous substances
+DIAG0392,ENC0204,PAT059,R53.0,Neoplastic (malignant) related fatigue
+DIAG0393,ENC0205,PAT060,S03.0XXS,Dislocation of jaw sequela
+DIAG0394,ENC0206,PAT061,M16.0,Bilateral primary osteoarthritis of hip
+DIAG0395,ENC0207,PAT062,Z23,Shingles vaccine
+DIAG0396,ENC0208,PAT063,K29.60,Other gastritis without bleeding
+DIAG0397,ENC0209,PAT064,L02.31,Cutaneous abscess of buttock
+DIAG0398,ENC0210,PAT065,G43.109,Migraine with aura not intractable without status migrainosus
+DIAG0399,ENC0211,PAT066,L29.9,Pruritus unspecified
+DIAG0400,ENC0212,PAT067,S63.209A,Dislocation of unspecified metacarpophalangeal joint of unspecified finger initial encounter
+DIAG0401,ENC0213,PAT068,E78.5,Hyperlipidemia - Follow up labs
+DIAG0402,ENC0214,PAT069,Z00.6,Encounter for examination for normal comparison and control in clinical research program
+DIAG0403,ENC0215,PAT070,M54.16,Radiculopathy lumbosacral region
+DIAG0404,ENC0216,PAT071,R00.1,Bradycardia unspecified
+DIAG0405,ENC0217,PAT072,N12,Tubulo-interstitial nephritis not specified as acute or chronic
+DIAG0406,ENC0218,PAT073,I48.2,Chronic atrial fibrillation
+DIAG0407,ENC0219,PAT074,S34.109A,Unspecified injury of lumbosacral spinal cord initial encounter
+DIAG0408,ENC0220,PAT075,M06.9,Rheumatoid arthritis unspecified
+DIAG0409,ENC0221,PAT076,J35.8,Other chronic diseases of tonsils and adenoids
+DIAG0410,ENC0222,PAT077,S22.20XA,Unspecified fracture of sternum initial encounter for closed fracture
+DIAG0411,ENC0223,PAT078,K51.90,Ulcerative colitis unspecified without complications
+DIAG0412,ENC0224,PAT079,H54.7,Unspecified visual loss
+DIAG0413,ENC0225,PAT080,R68.83,Chills (without fever)
+DIAG0414,ENC0226,PAT081,E11.621,Type 2 diabetes mellitus with foot ulcer
+DIAG0415,ENC0227,PAT082,L30.1,Dyshidrotic eczema
+DIAG0416,ENC0228,PAT083,G47.36,Sleep related hypoventilation in conditions classified elsewhere
+DIAG0417,ENC0229,PAT084,K05.311,Chronic periodontitis localized slight
+DIAG0418,ENC0230,PAT085,I70.221,Atherosclerosis of native arteries of extremities with rest pain right leg
+DIAG0419,ENC0231,PAT086,J12.9,Viral pneumonia unspecified
+DIAG0420,ENC0232,PAT087,M21.761,Unequal limb length (acquired) right tibia
+DIAG0421,ENC0233,PAT088,S09.90XA,Unspecified injury of head initial encounter
+DIAG0422,ENC0234,PAT089,R10.11,Right upper quadrant pain
+DIAG0423,ENC0235,PAT090,F43.10,Post-traumatic stress disorder unspecified
+DIAG0424,ENC0236,PAT091,S92.201A,Fracture of unspecified tarsal bone(s) right foot initial encounter for closed fracture
+DIAG0425,ENC0237,PAT092,E07.9,Disorder of thyroid unspecified
+DIAG0426,ENC0238,PAT093,M75.01,Adhesive capsulitis of right shoulder
+DIAG0427,ENC0239,PAT094,F54,Psychological and behavioral factors associated with disorders or diseases classified elsewhere
+DIAG0428,ENC0240,PAT095,S42.001A,Fracture of unspecified part of right clavicle initial encounter for closed fracture
+DIAG0429,ENC0241,PAT096,L60.0,Ingrowing nail
+DIAG0430,ENC0242,PAT097,Z01.01,Encounter for examination of eyes and vision with abnormal findings
+DIAG0431,ENC0243,PAT098,K57.50,Diverticulitis of intestine part unspecified without perforation or abscess without bleeding
+DIAG0432,ENC0244,PAT099,N92.6,Irregular menstruation unspecified
+DIAG0433,ENC0245,PAT100,J41.0,Simple chronic bronchitis
+DIAG0434,ENC0246,PAT001,R09.0,Asphyxia and hypoxemia
+DIAG0435,ENC0247,PAT002,M53.3,Sacrococcygeal disorders not elsewhere classified
+DIAG0436,ENC0248,PAT003,M47.816,Spondylosis without myelopathy or radiculopathy lumbosacral region
+DIAG0437,ENC0249,PAT004,P07.30,Pre-term newborn unspecified weeks of gestation
+DIAG0438,ENC0250,PAT005,I13.10,Hypertensive heart and chronic kidney disease without heart failure with stage 1 through stage 4 chronic kidney disease or unspecified chronic kidney disease
+DIAG0439,ENC0251,PAT006,J45.998,Other asthma
+DIAG0440,ENC0252,PAT007,S96.911A,Strain of unspecified muscle and tendon at ankle and foot level right foot initial encounter
+DIAG0441,ENC0253,PAT008,E11.610,Type 2 diabetes mellitus with diabetic neuropathic arthropathy
+DIAG0442,ENC0254,PAT009,J20.9,Acute bronchitis unspecified
+DIAG0443,ENC0255,PAT010,K20.9,Esophagitis unspecified
+DIAG0444,ENC0256,PAT011,J45.30,Mild persistent asthma uncomplicated
+DIAG0445,ENC0257,PAT012,S82.851A,Displaced trimalleolar fracture of right lower leg initial encounter for closed fracture
+DIAG0446,ENC0258,PAT013,E11.21,Type 2 diabetes mellitus with diabetic nephropathy
+DIAG0447,ENC0259,PAT014,J02.8,Acute pharyngitis due to other specified organisms
+DIAG0448,ENC0260,PAT015,Z00.110,Health supervision for newborn under 8 days old
+DIAG0449,ENC0261,PAT016,I25.119,Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris
+DIAG0450,ENC0262,PAT017,S52.601A,Unspecified fracture of lower end of right ulna initial encounter for closed fracture
+DIAG0451,ENC0263,PAT018,A08.4,Viral intestinal infection unspecified
+DIAG0452,ENC0264,PAT019,J01.40,Acute pansinusitis unspecified
+DIAG0453,ENC0265,PAT020,E01.8,Other iodine-deficiency related thyroid disorders and allied conditions
+DIAG0454,ENC0266,PAT021,K26.9,Duodenal ulcer unspecified as acute or chronic without hemorrhage or perforation
+DIAG0455,ENC0267,PAT022,N30.10,Interstitial cystitis (chronic) without hematuria
+DIAG0456,ENC0268,PAT023,I48.1,Persistent atrial fibrillation
+DIAG0457,ENC0269,PAT024,E03.0,Congenital hypothyroidism with diffuse goiter
+DIAG0458,ENC0270,PAT025,H81.09,Meniere's disease other
+DIAG0459,ENC0271,PAT026,J30.0,Vasomotor rhinitis
+DIAG0460,ENC0272,PAT027,S82.201A,Unspecified fracture of shaft of right tibia initial encounter for closed fracture
+DIAG0461,ENC0273,PAT028,L03.116,Cellulitis of left axilla
+DIAG0462,ENC0274,PAT029,N83.0,Follicular cyst of ovary
+DIAG0463,ENC0275,PAT030,H02.101,Unspecified ectropion of right upper eyelid
+DIAG0464,ENC0276,PAT031,J06.0,Acute laryngopharyngitis
+DIAG0465,ENC0277,PAT032,K59.09,Other constipation
+DIAG0466,ENC0278,PAT033,G44.1,Vascular headache not elsewhere classified
+DIAG0467,ENC0278,PAT033,M25.50,Pain in unspecified joint
+DIAG0468,ENC0279,PAT034,L23.5,Allergic contact dermatitis due to plants except food
+DIAG0469,ENC0280,PAT035,E78.3,Hyperchylomicronemia
+DIAG0470,ENC0281,PAT036,S62.201A,Unspecified fracture of first metacarpal bone right hand initial encounter for closed fracture
+DIAG0471,ENC0282,PAT037,G47.09,Other insomnia
+DIAG0472,ENC0283,PAT038,R11.11,Vomiting without nausea
+DIAG0473,ENC0284,PAT039,Z02.0,Encounter for examination for admission to educational institution
+DIAG0474,ENC0285,PAT040,M79.601,Pain in right arm
+DIAG0475,ENC0286,PAT041,E66.8,Other obesity
+DIAG0476,ENC0287,PAT042,J96.00,Acute respiratory failure unspecified whether with hypoxia or hypercapnia
+DIAG0477,ENC0288,PAT043,I16.0,Hypertensive urgency
+DIAG0478,ENC0288,PAT043,E78.6,Lipoprotein deficiency
+DIAG0479,ENC0289,PAT044,K29.20,Alcoholic gastritis without bleeding
+DIAG0480,ENC0290,PAT045,M17.2,Bilateral post-traumatic osteoarthritis of knee
+DIAG0481,ENC0291,PAT046,J32.0,Chronic maxillary sinusitis
+DIAG0482,ENC0292,PAT047,E11.10,Type 2 diabetes mellitus with ketoacidosis without coma
+DIAG0483,ENC0293,PAT048,L21.9,Seborrheic dermatitis unspecified
+DIAG0484,ENC0294,PAT049,F33.1,Major depressive disorder recurrent moderate
+DIAG0485,ENC0295,PAT050,I20.0,Unstable angina
+DIAG0486,ENC0296,PAT051,R10.10,Upper abdominal pain unspecified
+DIAG0487,ENC0297,PAT052,S93.501A,Sprain of unspecified toe(s) of right foot initial encounter
+DIAG0488,ENC0298,PAT053,I22.9,Subsequent ST elevation (STEMI) and non-ST elevation (NSTEMI) myocardial infarction unspecified
+DIAG0489,ENC0299,PAT054,H65.111,Acute and subacute allergic otitis media (mucoid) (sanguinous) (serous) right ear
+DIAG0490,ENC0300,PAT055,M70.90,Unspecified soft tissue disorder related to use overuse and pressure of unspecified site
+DIAG0491,ENC0301,PAT056,J33.0,Polyp of nasal cavity
+DIAG0492,ENC0302,PAT057,K59.1,Functional diarrhea
+DIAG0493,ENC0303,PAT058,E00.9,Congenital iodine-deficiency syndrome unspecified
+DIAG0494,ENC0304,PAT059,R54,Age-related physical debility
+DIAG0495,ENC0305,PAT060,S03.1XXA,Dislocation of tooth initial encounter
+DIAG0496,ENC0306,PAT061,M16.9,Osteoarthritis of hip unspecified
+DIAG0497,ENC0307,PAT062,Z28.3,Underimmunization status
+DIAG0498,ENC0308,PAT063,K21.00,Gastro-esophageal reflux disease with esophagitis without bleeding
+DIAG0499,ENC0309,PAT064,L03.211,Cellulitis of face
+DIAG0500,ENC0310,PAT065,G43.809,Other migraine not intractable without status migrainosus
